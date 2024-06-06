@@ -1,0 +1,51 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    /* Set font family */
+    background-color: #f0f0f0;
+    /* Set background color */
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    height: 100vh;
+    /* Set height to full viewport height */
+    margin: 0;
+    /* Remove default margin */
+}
+
+/* Error message styles */
+.invalid-feedback {
+    display: none;
+    /* Hide error messages by default */
+    color: red;
+    /* Set error message text color */
+}
+
+.is-invalid~.invalid-feedback {
+    display: block;
+    /* Display error message for invalid inputs */
+}
+
+/* Password strength indicator styles */
+#passwordStrength {
+    font-weight: bold;
+    /* Set font weight for strength indicator */
+}
+
+.strength-weak {
+    color: red;
+    /* Set color for weak password strength */
+}
+
+.strength-medium {
+    color: orange;
+    /* Set color for medium password strength */
+}
+
+.strength-strong {
+    color: green;
+    /* Set color for strong password strength */
+}

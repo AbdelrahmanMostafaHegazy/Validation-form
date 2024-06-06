@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Interactive Validation Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Container for form -->
+    <div class="container mt-5">
+        <!-- Card for form -->
+        <div class="card mx-auto" style="max-width: 500px;">
+            <!-- Card header -->
+            <div class="card-header text-center">
+                <h2>Sign Up</h2>
+            </div>
+            <!-- Card body -->
+            <div class="card-body">
+                <!-- Form -->
+                <form id="signupForm" novalidate>
+                    <!-- Name input -->
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        <div class="invalid-feedback" id="nameError"></div>
+                    </div>
+                    <!-- Email input -->
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        <div class="invalid-feedback" id="emailError"></div>
+                    </div>
+                    <!-- Password input -->
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password"
+                            required>
+                        <!-- Password strength indicator -->
+                        <small id="passwordHelp" class="form-text text-muted">Must be 6-20 characters long.</small>
+                        <div class="invalid-feedback" id="passwordError"></div>
+                        <div id="passwordStrength" class="mt-2"></div>
+                    </div>
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
